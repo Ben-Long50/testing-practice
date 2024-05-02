@@ -62,7 +62,7 @@ export function caesarCipher(string, fact) {
     'y',
     'z',
   ];
-  const punctuation = /[!"#$%&'()*+,-./:;<=>?@[\\\]^_`{|}~]/g;
+  const punctuation = /[ !"#$%&'()*+,-./:;<=>?@[\\\]^_`{|}~]/g;
   const stringArray = [...string];
   const newStringArray = stringArray.map((letter) => {
     if (punctuation.test(letter)) {

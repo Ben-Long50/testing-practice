@@ -46,7 +46,7 @@ test('keeping case', () => {
 });
 
 test('punctuation', () => {
-  expect(caesarCipher('death!', 5)).toBe('ijfym!');
+  expect(caesarCipher('death death!', 5)).toBe('ijfym ijfym!');
 });
 
 // Tests for analyzeArray function
